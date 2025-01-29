@@ -10,7 +10,6 @@
 }
 
 .hero h1 {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   color: var(--background-color);
@@ -22,12 +21,14 @@
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
+  background: var(--color-black);
 }
 
 .hero img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  opacity: .4;
 }
 
 @media (width >= 900px) {

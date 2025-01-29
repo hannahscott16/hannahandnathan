@@ -12,10 +12,12 @@
 
 :root {
   /* colors */
-  --background-color: white;
+  --background-color: #dccbb6;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #ffffff;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
@@ -38,7 +40,32 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 84px;
+
+
+  /* Buttons & Links */
+  --hover-animation-delay: 0.4s;
+  --hover-animation-curve: ease;
+  --hover-animation-offset: 2px;
+
+  /* Animations and transition */
+  --hover-animation: 0.6s all ease-out;
+
+  /* Spacing */
+  --spacing-xxxs: 0.25rem; /* 4px */
+  --spacing-xxs: 0.5rem; /* 8px */
+  --spacing-xsm: 0.75rem; /* 12px */
+  --spacing-xs: 1rem; /* 16px */
+  --spacing-s: 1.5rem; /* 24px */
+  --spacing-m: 2rem; /* 32px */
+  --spacing-ml: 2.5rem; /* 40px */
+  --spacing-l: 3rem; /* 48px */
+  --spacing-xl: 3.5rem; /* 56px */
+  --spacing-xxl: 4rem; /* 64px */
+  --spacing-xxxl: 5rem; /* 80px */
+  --spacing-4xl: 6rem; /* 96px */
+  --spacing-5xl: 6.5rem; /* 104px */
+  --spacing-6xl: 8.889rem; /* 160px */
 }
 
 
@@ -59,6 +86,12 @@
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -67,6 +100,11 @@ body {
   font-size: var(--body-font-size-m);
   line-height: 1.6;
   margin: 0;
+}
+
+main {
+  position: relative;
+  top: var(--nav-height);
 }
 
 body.appear {
@@ -223,7 +261,7 @@ main > .section {
 
 main > .section > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 24px;
 }
 
